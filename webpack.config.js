@@ -43,7 +43,7 @@ module.exports ={
             {
                 title: 'lyx',
                 filename: '../index.html',
-                template: __dirname+'src/tpl/div.html',
+                template: __dirname + '/src/tpl/div.html',
                 inject:'body',
                 info:'nihao'//尽量不要在这定义，会变慢，尽量在模板里完成
             }
