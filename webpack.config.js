@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports ={
     entry :__dirname + "/src/js/index.js",
     output:{
-        path:__dirname + '/assets/',
+        path:__dirname + '/assets',
         filename:"js/index.js",
      /*   publicPath:"/temp/"*/
     },
