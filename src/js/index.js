@@ -4,7 +4,7 @@
 var $=require("jquery");
 /*var stuJson=require("./stu.json");*/
 require("../css/index.css");
-
+require("../css/tab.css");
 
 
 /*txt="my name  hahah my name  hahah " + stuJson.name;*/

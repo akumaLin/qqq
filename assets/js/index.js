@@ -60,10 +60,10 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/temp/";
+/******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -74,6 +74,12 @@
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10300,7 +10306,7 @@ return jQuery;
 
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -10308,20 +10314,21 @@ module.exports = {
 };
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
  * Created by lyx on 2017/2/22.
  */
-var $ = __webpack_require__(1);
+var $ = __webpack_require__(2);
 /*var stuJson=require("./stu.json");*/
 __webpack_require__(0);
+__webpack_require__(1);
 
 /*txt="my name  hahah my name  hahah " + stuJson.name;*/
 $("#welcome").html('hello world');
 
-!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(2)], __WEBPACK_AMD_DEFINE_RESULT__ = function (stuJson) {
+!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(3)], __WEBPACK_AMD_DEFINE_RESULT__ = function (stuJson) {
   console.log(stuJson);
   return $("#welcome").append(stuJson.name);
 }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),

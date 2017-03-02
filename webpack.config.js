@@ -1,12 +1,13 @@
 var webpack=require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-const extractCSS = new ExtractTextPlugin('css/[name].css');
+const extractCSS = new ExtractTextPlugin('css/index.css');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports ={
     entry :__dirname + "/src/js/index.js",
     output:{
-        path:__dirname + '/assets/js',
-        filename:"index.js",
-        publicPath:"/temp/"
+        path:__dirname + '/assets/',
+        filename:"js/index.js",
+     /*   publicPath:"/temp/"*/
     },
     module:{
         rules:[
@@ -37,6 +38,15 @@ module.exports ={
         port:'1278',
     },
     plugins:  [
-		extractCSS
+		extractCSS,
+        new HtmlWebpackPlugin(
+            {
+                title: 'lyx',
+                filename: '../index.html',
+                template: __dirname+'src/tpl/div.html',
+                inject:'body',
+                info:'nihao'//尽量不要在这定义，会变慢，尽量在模板里完成
+            }
+        )
     ]
 }
